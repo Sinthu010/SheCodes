@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Demo</title>
+
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+      }
+
+      h1 {
+        size: 100px;
+        color: #1964d6;
+        font-weight: 900;
+        margin: 0px;
+        padding: 10px;
+      }
+
+      button {
+        color: white;
+        background: #1964d6;
+        border-width: thin;
+        border-radius: 30px;
+        border-color: #1964d6;
+        font-size: 16px;
+        padding: 18px 23px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 2px rgb(213, 213, 213);
+        transition: all 200ms ease-in-out;
+      }
+
+      .main-values {
+        color: black;
+        padding: 10px;
+      }
+
+      .first-main-value {
+        font-weight: 400;
+      }
+
+      .day {
+        font-size: larger;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+
+      .first-value {
+        font-size: large;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: light;
+        color: rgb(75, 75, 75);
+        padding: 15px;
+      }
+
+      .second-value {
+        font-size: large;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+        color: rgb(75, 75, 75);
+        padding: 15px;
+      }
+
+      .weather-box {
+        padding: 30px 10px;
+        width: 400px;
+        margin: 0 auto;
+        border-radius: 15px;
+        transition: all 300ms ease-in-out;
+      }
+
+      .weather-box:hover {
+        background: #fefae9;
+      }
+
+      button:hover {
+        color: #1964d6;
+        background: white;
+        border-color: #1964d6;
+      }
+
+      .author {
+        color: rgb(75, 75, 75);
+        font-weight: 500;
+        font-size: 18px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤 <br />Currently 21° in Tokyo
+      <div class="main-values">
+        <span class="first-main-value">13° /</span> 23°
+      </div>
+    </h1>
+
+    <div class="weather-box">
+      <div class="day">🌧 Tomorrow</div>
+      <span class="first-value">10°</span>/<span class="second-value">22°</span>
+    </div>
+
+    <div class="weather-box">
+      <div class="day">🌥 Saturday</div>
+      <span class="first-value">15°</span>/<span class="second-value">17°</span>
+    </div>
+
+    <div class="weather-box">
+      <div class="day">☀️ Sunday</div>
+      <span class="first-value">25°</span>/<span class="second-value">28°</span>
+    </div>
+
+    <button>Change city</button>
+
+    <div class="author">Coded by Sinthuja Muthulingam</div>
+  </body>
+</html>
